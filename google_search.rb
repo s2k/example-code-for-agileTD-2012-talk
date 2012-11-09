@@ -11,6 +11,10 @@ class GoogleSearch
     @browser.button( :id, 'gbqfb' ).click
     @browser.ol( :id, 'rso' ).links.map(&:text)
   end
+
+  def close
+    @browser.close
+  end
 end
 
 
